@@ -6,7 +6,7 @@ public class Employee {
 	private String fullname;
 	private String email;
 	private String gender;
-	private String hobbies;
+	private String hobbiees;
 	private String country;
 	private String address;
 	
@@ -34,11 +34,11 @@ public class Employee {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getHobbies() {
-		return hobbies;
+	public String getHobbiees() {
+		return hobbiees;
 	}
-	public void setHobbies(String hobbies) {
-		this.hobbies = hobbies;
+	public void setHobbiees(String hobbiees) {
+		this.hobbiees = hobbiees;
 	}
 	public String getCountry() {
 		return country;
@@ -56,7 +56,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", fullname=" + fullname + ", email=" + email + ", gender=" + gender
-				+ ", hobbies=" + hobbies + ", country=" + country + ", address=" + address + "]";
+				+ ", hobbiees=" + hobbiees + ", country=" + country + ", address=" + address + "]";
 	}
 	
 }

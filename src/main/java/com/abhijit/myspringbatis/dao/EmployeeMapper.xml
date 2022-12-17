@@ -10,7 +10,7 @@
  	<result property="fullname" column="fullname"/>
  	<result property="email" column="email"/>
  	<result property="gender" column="gender"/>
- 	<result property="hobbies" column="hobbies"/>
+ 	<result property="hobbiees" column="hobbiees"/>
  	<result property="country" column="country"/>
  	<result property="address" column="address"/>
  		

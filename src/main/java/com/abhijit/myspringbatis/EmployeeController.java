@@ -20,10 +20,8 @@ public class EmployeeController {
 		
 	System.out.println(mapper.getAllEmployee());
 	ModelAndView mav = new ModelAndView("list-employees");
-	mav.addObject("list-employees", mapper.getAllEmployee());
+	mav.addObject("listemployees", mapper.getAllEmployee());
 		return mav;
 	}
-	
-	
 	
 }
