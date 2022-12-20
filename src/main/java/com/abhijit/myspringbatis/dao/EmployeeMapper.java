@@ -11,14 +11,23 @@ import com.abhijit.myspringbatis.util.MyBatisUtil;
 @Repository
 public class EmployeeMapper {
 
-	public List<Employee> getAllEmployee(){
-		
+	public List<Employee> getAllEmployee() {
+
 		SqlSession sqlSession = MyBatisUtil.getSqlSessionFactory().openSession();
 		List<Employee> employeeList = sqlSession.selectList("getAllEmployees");
 		sqlSession.commit();
 		sqlSession.close();
-		
+
 		return employeeList;
 	}
-	
+
+	public void saveEmployee(Employee employee) {
+
+		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
+		session.insert("insertEmployee", employee);
+		session.commit();
+		session.close();
+
+	}
+
 }

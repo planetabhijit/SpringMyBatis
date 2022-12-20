@@ -19,5 +19,10 @@
  	<select id="getAllEmployees" resultType="employee" resultMap="result">
  		SELECT * FROM employee
  	</select>
+ 	
+ 	<insert id="insertEmployee" parameterType="employee" keyProperty="id" useGeneratedKeys="true">
+ 		INSERT INTO employee(fullname, email, gender, hobbiees, country, address)
+ 		VALUES(#{fullname}, #{email}, #{gender}, #{hobbiees}, #{country}, #{address})
+ 	</insert>
  
  </mapper>
